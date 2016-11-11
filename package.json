@@ -1,0 +1,23 @@
+{
+  "name": "irdim-live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naydenov1/irdm-live.git"
+  },
+  "author": "Boyan Naydenov, Pol Mesalles, Xavi Matabosch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naydenov1/irdm-live/issues"
+  },
+  "homepage": "https://github.com/naydenov1/irdm-live#readme"
+}
