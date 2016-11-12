@@ -1,4 +1,5 @@
 var viewer = new Cesium.Viewer('cesiumContainer');
+<<<<<<< HEAD
 
 var connection = new WebSocket('ws://localhost:3030');
 
@@ -23,3 +24,5 @@ var entity = viewer.entities.add({
     }
 });
 viewer.trackedEntity = entity;
+=======
+>>>>>>> e6e40a67ee8b626542a4f4be41270d8c1d80b4ae
