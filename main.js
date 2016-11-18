@@ -1,25 +1,46 @@
 var viewer = new Cesium.Viewer('cesiumContainer');
-var connection = new WebSocket('ws://localhost:3030');
 
-connection.onmessage = function (evt) { 
-  var received_msg = evt.data;
-  var coordinates = JSON.parse(received_msg);
-  console.log(coordinates[0]);
-  console.log(coordinates[1]);
-  console.log(coordinates[2]);
-};
+// var connection = new WebSocket('ws://localhost:3030');
 
-var position = Cesium.Cartesian3.fromDegrees(-123.0744619, 44.0503706, 0);
+// connection.onmessage = function (evt) { 
+//   var received_msg = evt.data;
+//   var coordinates = JSON.parse(received_msg);
+//   console.log(coordinates[0]);
+//   console.log(coordinates[1]);
+//   console.log(coordinates[2]);
+// };
+
 var heading = Cesium.Math.toRadians(45.0);
 var pitch = Cesium.Math.toRadians(15.0);
 var roll = Cesium.Math.toRadians(0.0);
-var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, heading, pitch, roll);
+var positionInicial = changePos(1);
 
-var entity = viewer.entities.add({
-    position : position,
-	orientation : orientation,
-    model : {
-        uri : './assets/balloon_finalv4.glb'
-    }
-});
-viewer.trackedEntity = entity;
+function changePos (iter) {
+var longitude = -123;
+var latitude  = 41;
+var height = 2;
+
+longitude = longitude + iter;
+height = height + iter;
+console.log(iter);
+return Cesium.Cartesian3.fromDegrees(longitude,latitude, height);
+
+}
+var i = 0;
+
+function myTimer() {
+  i = i+1;
+  var positionCalc = changePos(i);
+  var entity = viewer.entities.add({
+      position : positionCalc,
+      orientation : Cesium.Transforms.headingPitchRollQuaternion(positionInicial, heading, pitch, roll),
+      model : {
+          uri : './assets/balloon_finalv4.glb'
+      }
+  });
+  viewer.trackedEntity = entity;
+}
+viewer.infoBox.frame.sandbox = "allow-same-origin allow-top-navigation allow-pointer-lock allow-popups allow-forms allow-scripts";
+
+
+setInterval(myTimer, 1000);

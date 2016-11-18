@@ -10,9 +10,46 @@
   <style>
       @import url(main.css);
   </style>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
 </head>
 <body>
   <div id="cesiumContainer"></div>
   <script src="./main.js"></script>
+  // <script>
+  // // https://groups.google.com/forum/#!topic/cesium-dev/p5doJvVYzbo
+  //       socket.on('czml-test', function(msg){
+
+  //           // Parse our message data
+  //           var response = JSON.parse(msg.data);
+  //           expected format to receive :
+  //           // If we haven't been through yet, then we need to
+  //           // process the new data and add the datasource to the
+  //           // viewer datasources.  But, we only want to do it once
+  //           // for the sake of efficiency.  Every other time we want
+  //           // to make sure we only process the new data.
+
+  //           // For the sake of the example, assume we have a variable 
+  //           //called entityCount that has a count of the entities
+  //           // in the viewer EntityCollection
+  //           if ( entityCount == 0 )
+  //           {
+  //               czmlDataSource.process(response);
+  //               viewer.dataSources.add(czmlDataSource);
+  //           }
+  //           else
+  //           {
+
+  //               czmlDataSource.process(response);
+
+  //               // Leaving this next line will result in a new point being
+  //               // drawn without removing the previous points.
+  //               // Taking this line out results in clearing all previous
+  //               // points and drawing a new point.
+  //               // NOTE: The Cesium selector follows the most recent point.
+  //               //viewer.dataSources.add(czmlDataSource);
+  //           }
+
+  //       });
+  //   </script>
 </body>
 </html>
