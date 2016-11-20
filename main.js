@@ -1,46 +1,21 @@
-var viewer = new Cesium.Viewer('cesiumContainer');
+var viewer = new Cesium.Viewer( 'cesiumContainer' );
 
-// var connection = new WebSocket('ws://localhost:3030');
+if ( typeof( EventSource ) !== 'undefined' ) {
+	var stream = new EventSource( 'stream.php' );
 
-// connection.onmessage = function (evt) { 
-//   var received_msg = evt.data;
-//   var coordinates = JSON.parse(received_msg);
-//   console.log(coordinates[0]);
-//   console.log(coordinates[1]);
-//   console.log(coordinates[2]);
-// };
+	stream.onopen = function( e ) {
+		// Remove previous data points (if any) and add all the data
+	};
 
-var heading = Cesium.Math.toRadians(45.0);
-var pitch = Cesium.Math.toRadians(15.0);
-var roll = Cesium.Math.toRadians(0.0);
-var positionInicial = changePos(1);
+	stream.addEventListener( 'update', function( e ) {
+		// We'll update position only once we receive an "update" event
+	});
 
-function changePos (iter) {
-var longitude = -123;
-var latitude  = 41;
-var height = 2;
-
-longitude = longitude + iter;
-height = height + iter;
-console.log(iter);
-return Cesium.Cartesian3.fromDegrees(longitude,latitude, height);
-
+	stream.onmessage = function( e ) { 
+		// onmessage is a generic event, only to be used for testing purposes
+		var data = JSON.parse( e.data );
+		console.log( data );
+	};
+} else {
+	console.log( "I'm sorry. Your browser sucks." );
 }
-var i = 0;
-
-function myTimer() {
-  i = i+1;
-  var positionCalc = changePos(i);
-  var entity = viewer.entities.add({
-      position : positionCalc,
-      orientation : Cesium.Transforms.headingPitchRollQuaternion(positionInicial, heading, pitch, roll),
-      model : {
-          uri : './assets/balloon_finalv4.glb'
-      }
-  });
-  viewer.trackedEntity = entity;
-}
-viewer.infoBox.frame.sandbox = "allow-same-origin allow-top-navigation allow-pointer-lock allow-popups allow-forms allow-scripts";
-
-
-setInterval(myTimer, 1000);
