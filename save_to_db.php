@@ -1,12 +1,12 @@
 <?php
 
-// Will get data from Iridium $_POST. This is just a test using $_GET.
+// Will get data from Iridium $_POST (will need to check origin). This is just a test.
 
 require_once 'connect.php';
 
-foreach ($_GET as $key => $value) {
+foreach ($_POST as $key => $value) {
 	$$key = $value;
-	// echo "$key is $value\n";
+	echo "$key is $value" . PHP_EOL;
 }
 
 $query = "INSERT INTO test_flight ( id, latitude, longitude, altitude ) VALUES ( :id, :latitude, :longitude, :altitude )";
