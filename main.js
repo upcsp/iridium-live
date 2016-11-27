@@ -1,6 +1,11 @@
 // We should get a Bing Maps key for Cesium to stop messing up the console (https://www.bingmapsportal.com/)
 var viewer = new Cesium.Viewer( 'cesiumContainer' );
 
+// Cesium constants
+var heading = Cesium.Math.toRadians(45.0);
+var pitch   = Cesium.Math.toRadians(15.0);
+var roll    = Cesium.Math.toRadians(0.0);
+
 if ( typeof( EventSource ) !== 'undefined' ) {
 	var stream = new EventSource( 'stream.php' );
 
@@ -13,6 +18,13 @@ if ( typeof( EventSource ) !== 'undefined' ) {
 		console.log("START");
 		var data = JSON.parse( e.data );
 		console.log( data );
+
+		var position = Cesium.Cartesian3.fromDegrees( data.longitude, data.latitude, data.altitude );
+		viewer.entities.add({
+			position    : position,
+			orientation : Cesium.Transforms.headingPitchRollQuaternion( position, heading, pitch, roll ),
+			model       : { uri : './assets/balloon.glb' }
+		});
 	});
 
 	stream.addEventListener( 'update', function( e ) {
@@ -20,6 +32,14 @@ if ( typeof( EventSource ) !== 'undefined' ) {
 		console.log("UPDATE");
 		var data = JSON.parse( e.data );
 		console.log( data );
+
+		var position = Cesium.Cartesian3.fromDegrees( data.longitude, data.latitude, data.altitude );
+		var entity = viewer.entities.add({
+			position    : position,
+			orientation : Cesium.Transforms.headingPitchRollQuaternion( position, heading, pitch, roll ),
+			model       : { uri : './assets/balloon.glb' }
+		});
+		viewer.trackedEntity = entity;
 	});
 
 	stream.onmessage = function( e ) { 
