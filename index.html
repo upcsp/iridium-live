@@ -1,55 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Use correct character set. -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <title>Irdm Live!</title>
-  <script src="./Cesium/Cesium.js"></script>
-  <style>
-      @import url(main.css);
-  </style>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="description" content="Iridium Live Tracker by UPC Space Program">
+	<!-- Main -->
+	<title>Irdm Live</title>
+	<!-- Cesium -->
+	<script src="./Cesium/Cesium.js"></script>
+	<link rel="stylesheet" href="./Cesium/Widgets/widgets.css">
+	<!-- Assets -->
+	<link rel="stylesheet" href="./assets/styles.css">
 </head>
+
 <body>
-  <div id="cesiumContainer"></div>
-  <script src="./main.js"></script>
-  // <script>
-  // // https://groups.google.com/forum/#!topic/cesium-dev/p5doJvVYzbo
-  //       socket.on('czml-test', function(msg){
-
-  //           // Parse our message data
-  //           var response = JSON.parse(msg.data);
-  //           expected format to receive :
-  //           // If we haven't been through yet, then we need to
-  //           // process the new data and add the datasource to the
-  //           // viewer datasources.  But, we only want to do it once
-  //           // for the sake of efficiency.  Every other time we want
-  //           // to make sure we only process the new data.
-
-  //           // For the sake of the example, assume we have a variable 
-  //           //called entityCount that has a count of the entities
-  //           // in the viewer EntityCollection
-  //           if ( entityCount == 0 )
-  //           {
-  //               czmlDataSource.process(response);
-  //               viewer.dataSources.add(czmlDataSource);
-  //           }
-  //           else
-  //           {
-
-  //               czmlDataSource.process(response);
-
-  //               // Leaving this next line will result in a new point being
-  //               // drawn without removing the previous points.
-  //               // Taking this line out results in clearing all previous
-  //               // points and drawing a new point.
-  //               // NOTE: The Cesium selector follows the most recent point.
-  //               //viewer.dataSources.add(czmlDataSource);
-  //           }
-
-  //       });
-  //   </script>
+	<div id="cesiumContainer"></div>
+	<script src="./main.js"></script>
 </body>
+
 </html>
