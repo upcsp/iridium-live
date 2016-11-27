@@ -5,16 +5,17 @@
 require_once 'connect.php';
 
 foreach ($_POST as $key => $value) {
-	$$key = $value;
+	// $$key = $value;
 	echo "$key is $value" . PHP_EOL;
 }
 
-$query = "INSERT INTO test_flight ( id, latitude, longitude, altitude ) VALUES ( :id, :latitude, :longitude, :altitude )";
+$query = "INSERT INTO final_test ( transmit_time, GPS_lat, GPS_long, GPS_h ) VALUES ( :transmit_time, :GPS_lat, :GPS_long, :GPS_h )";
 $statement = $connection->prepare( $query );
 
-$statement->bindParam( ':id', $id );
-$statement->bindParam( ':latitude', $latitude );
-$statement->bindParam( ':longitude', $longitude );
-$statement->bindParam( ':altitude', $altitude );
+// $statement->bindParam( ':mysql_id', $_POST['mysql_id'] );
+$statement->bindParam( ':transmit_time', $_POST['transmit_time'] );
+$statement->bindParam( ':GPS_lat', $_POST['GPS_lat'] );
+$statement->bindParam( ':GPS_long', $_POST['GPS_long'] );
+$statement->bindParam( ':GPS_h', $_POST['GPS_h'] );
 
 $statement->execute();

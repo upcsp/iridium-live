@@ -12,22 +12,30 @@ require_once 'connect.php';
 $id = 0; // should be last sent when fullyimplemented
 
 while ( true ) {
-	// Send "update" event when we have new data
+	// Check if we have a new data point
 
-	$query = "SELECT * FROM test_flight WHERE id = ( SELECT MAX( ID ) FROM test_flight )";
+	$query = "SELECT MAX( mysql_id ) FROM final_test";
 	$statement = $connection->query( $query );
 	$row = $statement->fetch( PDO::FETCH_ASSOC );
 
-	if ( $row['id'] > $id ) {
-		echo 'id: ' . $row['id'] . PHP_EOL;
+	if ( $row['MAX( mysql_id )'] > $id ) {
+		$query = "SELECT * FROM final_test WHERE mysql_id = :mysql_id";
+		$statement = $connection->prepare( $query );
+
+		$statement->bindParam( ':mysql_id', $row['MAX( mysql_id )'] );
+		$statement->execute();
+
+		$row = $statement->fetch( PDO::FETCH_ASSOC );
+
+		echo 'id: ' . $row['mysql_id'] . PHP_EOL;
 		// echo 'event: update' . PHP_EOL;
-		echo 'data: { "id": "' . $row['id'] . '", "latitude": "' . $row['latitude'] . '", "longitude": "' . $row['longitude'] . '", "altitude": "' . $row['altitude'] . '" }' . PHP_EOL;
+		echo 'data: { "id": "' . $row['mysql_id'] . '", "time": "' . $row['transmit_time'] . '", "latitude": "' . $row['GPS_lat'] . '", "longitude": "' . $row['GPS_long'] . '", "altitude": "' . $row['GPS_h'] . '" }' . PHP_EOL;
 		echo PHP_EOL; // \n\n necessary for Server-Sent Events
 
 		ob_flush();
 		flush();
 
-		$id = $row['id'];
+		$id = $row['mysql_id'];
 	}
 
 	sleep( 1 ); // chill the server
