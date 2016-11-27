@@ -3,12 +3,13 @@
 header( 'Content-Type: text/event-stream' );
 header( 'Cache-Control: no-cache' );
 
+require 'reference.php';
 require_once 'connect.php';
 
 // We'll be using PHP_EOL instead of \n for multi-arch compatibility
 
 // When a new client connects, get all the previous data points
-$query = "SELECT * FROM final_test";
+$query = "SELECT * FROM " . $reference;
 $statement = $connection->query( $query );
 $rows = $statement->fetchAll( PDO::FETCH_ASSOC );
 
@@ -27,13 +28,13 @@ $id = count( $rows ); // last message sent
 
 while ( true ) {
 	// Check if we have a new data point
-	$query = "SELECT MAX( mysql_id ) FROM final_test";
+	$query = "SELECT MAX( mysql_id ) FROM " . $reference;
 	$statement = $connection->query( $query );
 	$row = $statement->fetch( PDO::FETCH_ASSOC );
 
 	if ( $row['MAX( mysql_id )'] > $id ) {
 		// Send "update" event when we have new data
-		$query = "SELECT * FROM final_test WHERE mysql_id = :mysql_id";
+		$query = "SELECT * FROM " . $reference . " WHERE mysql_id = :mysql_id";
 		$statement = $connection->prepare( $query );
 
 		$statement->bindParam( ':mysql_id', $row['MAX( mysql_id )'] );
