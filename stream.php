@@ -17,7 +17,7 @@ foreach( $rows as $row ) {
 	echo 'id: ' . $row['mysql_id'] . PHP_EOL;
 	echo 'event: start' . PHP_EOL;
 	echo 'data: { "id": "' . $row['mysql_id'] . '", "time": "' . $row['transmit_time'] . '", "latitude": "' . $row['GPS_lat'] . '", "longitude": "' . $row['GPS_long'] . '", "altitude": "' . $row['GPS_h'] . '" }' . PHP_EOL;
-	echo PHP_EOL; // \n\n necessary for Server-Sent Events
+	echo PHP_EOL; // \n\n is necessary for Server-Sent Events
 
 	ob_flush();
 	flush();
@@ -44,7 +44,7 @@ while ( true ) {
 		echo 'id: ' . $row['mysql_id'] . PHP_EOL;
 		echo 'event: update' . PHP_EOL;
 		echo 'data: { "id": "' . $row['mysql_id'] . '", "time": "' . $row['transmit_time'] . '", "latitude": "' . $row['GPS_lat'] . '", "longitude": "' . $row['GPS_long'] . '", "altitude": "' . $row['GPS_h'] . '" }' . PHP_EOL;
-		echo PHP_EOL; // \n\n necessary for Server-Sent Events
+		echo PHP_EOL; // \n\n is necessary for Server-Sent Events
 
 		ob_flush();
 		flush();

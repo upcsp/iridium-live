@@ -1,3 +1,4 @@
+// We should get a Bing Maps key for Cesium to stop messing up the console (https://www.bingmapsportal.com/)
 var viewer = new Cesium.Viewer( 'cesiumContainer' );
 
 if ( typeof( EventSource ) !== 'undefined' ) {
