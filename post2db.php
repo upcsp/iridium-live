@@ -2,8 +2,8 @@
 
 // Will get data from Iridium $_POST (should check origin)
 
-require 'reference.php';
 require_once 'connect.php';
+$reference = parse_ini_file( 'reference.ini' )['name'];
 
 foreach ($_POST as $key => $value) {
 	// $$key = $value;

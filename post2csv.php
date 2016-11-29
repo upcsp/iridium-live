@@ -1,6 +1,6 @@
 <?php
 
-require 'reference.php';
+$reference = parse_ini_file( 'reference.ini' )['name'];
 
 // Open (or create) file to write data
 $filename = "./" . $reference . "-data.csv";

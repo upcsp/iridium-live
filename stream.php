@@ -3,8 +3,8 @@
 header( 'Content-Type: text/event-stream' );
 header( 'Cache-Control: no-cache' );
 
-require 'reference.php';
 require_once 'connect.php';
+$reference = parse_ini_file( 'reference.ini' )['name'];
 
 // We'll be using PHP_EOL instead of \n for multi-arch compatibility
 
