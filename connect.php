@@ -1,6 +1,6 @@
 <?php
 
-$config = parse_ini_file( 'config.ini' );
+$config = parse_ini_file( '../../private/iridium/config.ini' );
 if ( ! $config ) die( "Config access error" );
 
 try {

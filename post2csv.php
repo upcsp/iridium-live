@@ -1,6 +1,7 @@
 <?php
 
-$reference = parse_ini_file( 'reference.ini' )['name'];
+require 'post.php';
+$reference = parse_ini_file( '../../private/iridium/reference.ini' )['name'];
 
 // Open (or create) file to write data
 $filename = "./" . $reference . "-data.csv";
@@ -10,7 +11,7 @@ if ( file_exists( $filename ) ) {
 	$file = fopen( $filename, "a" );
 } else {
 	$file = fopen( $filename, "a" );
-	fwrite( $file, "HTTP_UTC,momsn,lat,long,h_GPS,T_BMP,h_BMP\n" );
+	fwrite( $file, "HTTP_UTC,momsn,transmit_time,iridium_latitude,iridium_longitude,iridium_cep,GPS_long,GPS_lat,GPS_h,T_int,T_ext,Alt_BMP,Sat_gps,State\n" );
 }
 
 // Check if file has been correctly opened
@@ -22,14 +23,6 @@ if ( ! $file ) {
 date_default_timezone_set("UTC");
 $httpUTC = date("Y-m-d H:i:s", time());
 
-// Iridium variables
-$momsn = $_POST['momsn'];
-$lat   = $_POST['lat'];
-$long  = $_POST['long'];
-$h_GPS = $_POST['h_GPS'];
-$T_BMP = $_POST['T_BMP'];
-$h_BMP = $_POST['h_BMP'];
-
 // Write file
-fwrite( $file, $httpUTC . "," . $momsn . "," . $lat . "," . $long . "," . $h_GPS . "," . $T_BMP . "," . $h_BMP . "\n" );
+fwrite( $file, $httpUTC . "," . $momsn . "," . $transmit_time . "," . $iridium_latitude . "," . $iridium_longitude . "," . $iridium_cep . "," . $data . "\n" );
 fclose( $file );

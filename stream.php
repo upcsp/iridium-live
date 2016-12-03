@@ -4,7 +4,7 @@ header( 'Content-Type: text/event-stream' );
 header( 'Cache-Control: no-cache' );
 
 require_once 'connect.php';
-$reference = parse_ini_file( 'reference.ini' )['name'];
+$reference = parse_ini_file( '../../private/iridium/reference.ini' )['name'];
 
 // We'll be using PHP_EOL instead of \n for multi-arch compatibility
 

@@ -1,14 +1,21 @@
 <?php
 
-// Will get data from Iridium $_POST (should check origin)
-
+require 'post.php';
 require_once 'connect.php';
-$reference = parse_ini_file( 'reference.ini' )['name'];
+$reference = parse_ini_file( '../../private/iridium/reference.ini' )['name'];
 
-foreach ($_POST as $key => $value) {
-	// $$key = $value;
-	echo "$key is $value" . PHP_EOL;
-}
+$data = explode( ',', $data );
+// print_r( $data );
+
+// Latitude
+if ( substr( $data[0], -1 ) == 'N' ) $data[0] = substr( $data[0], 0,  count( $data[0] ) - 2 );
+else $data[0] = substr( $data[0], 0,  count( $data[0] ) - 2 ) * -1;
+
+// Longitude
+if ( substr( $data[1], -1 ) == 'E' ) $data[1] = substr( $data[1], 0,  count( $data[1] ) - 2 );
+else $data[1] = substr( $data[1], 0,  count( $data[1] ) - 2 ) * -1;
+
+// print_r( $data );
 
 // Will trust the user with no prepared statement
 $query = "SHOW TABLES LIKE '" . $reference . "'";
@@ -28,9 +35,9 @@ $query = "INSERT INTO " . $reference . " ( transmit_time, GPS_lat, GPS_long, GPS
 $statement = $connection->prepare( $query );
 
 // $statement->bindParam( ':mysql_id', $_POST['mysql_id'] );
-$statement->bindParam( ':transmit_time', $_POST['transmit_time'] );
-$statement->bindParam( ':GPS_lat', $_POST['GPS_lat'] );
-$statement->bindParam( ':GPS_long', $_POST['GPS_long'] );
-$statement->bindParam( ':GPS_h', $_POST['GPS_h'] );
+$statement->bindParam( ':transmit_time', $transmit_time );
+$statement->bindParam( ':GPS_lat', $data[0] );
+$statement->bindParam( ':GPS_long', $data[1] );
+$statement->bindParam( ':GPS_h', $data[2] );
 
 $statement->execute();
