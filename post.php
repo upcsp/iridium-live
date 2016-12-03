@@ -1,6 +1,7 @@
 <?php
 
 // Will get data from Iridium $_POST (should check origin)
+// print_r( $_POST );
 
 $imei = $_POST['imei'];
 $momsn = $_POST['momsn'];
