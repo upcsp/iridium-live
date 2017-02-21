@@ -1,20 +1,17 @@
 <?php
-echo "start";
+
 header( 'Content-Type: text/event-stream' );
 header( 'Cache-Control: no-cache' );
-header( 'Content-Encoding: none; ' );//disable apache compressed
-
 
 require_once 'connect.php';
 $reference = parse_ini_file( '../../private/iridium/reference.ini' )['name'];
-echo "connected";
+
 // We'll be using PHP_EOL instead of \n for multi-arch compatibility
 
 // When a new client connects, get all the previous data points
 $query = "SELECT * FROM " . $reference;
 $statement = $connection->query( $query );
 $rows = $statement->fetchAll( PDO::FETCH_ASSOC );
-echo "ref";
 
 foreach( $rows as $row ) {
 	// Send all previous data points as the "start" event
@@ -28,9 +25,7 @@ foreach( $rows as $row ) {
 }
 
 $id = count( $rows ); // last message sent
-@ini_set('zlib.output_compression', 0);
-@ini_set('implicit_flush', 1);
-@ob_end_clean();
+
 while ( true ) {
 	// Check if we have a new data point
 	$query = "SELECT MAX( mysql_id ) FROM " . $reference;
@@ -60,4 +55,3 @@ while ( true ) {
 
 	sleep( 1 ); // chill the server
 }
-
