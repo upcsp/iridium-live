@@ -17,6 +17,8 @@
 
  - Add line to the followed path. Now it just shows the dots.
  - Imporve labels.
+ - Switch to NodeJS (with MongoDB?) for an event-based back-end with WebSockets.
+ - Can we get a more accurate user geolocation with web technologies or do we need a native app?
  - Think about it.
 
 License
