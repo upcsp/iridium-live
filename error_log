@@ -1,0 +1,161 @@
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: imei in /home1/upcprogr/public_html/eyelink/post.php on line 6
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: momsn in /home1/upcprogr/public_html/eyelink/post.php on line 7
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: transmit_time in /home1/upcprogr/public_html/eyelink/post.php on line 8
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: iridium_latitude in /home1/upcprogr/public_html/eyelink/post.php on line 9
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: iridium_longitude in /home1/upcprogr/public_html/eyelink/post.php on line 10
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: iridium_cep in /home1/upcprogr/public_html/eyelink/post.php on line 11
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: data in /home1/upcprogr/public_html/eyelink/post.php on line 19
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: imei in /home1/upcprogr/public_html/eyelink/post.php on line 6
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: momsn in /home1/upcprogr/public_html/eyelink/post.php on line 7
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: transmit_time in /home1/upcprogr/public_html/eyelink/post.php on line 8
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: iridium_latitude in /home1/upcprogr/public_html/eyelink/post.php on line 9
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: iridium_longitude in /home1/upcprogr/public_html/eyelink/post.php on line 10
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: iridium_cep in /home1/upcprogr/public_html/eyelink/post.php on line 11
+[03-Dec-2016 16:24:34 America/Denver] PHP Notice:  Undefined index: data in /home1/upcprogr/public_html/eyelink/post.php on line 19
+[03-Dec-2016 20:58:28 America/Denver] PHP Notice:  Undefined offset: 1 in /home1/upcprogr/public_html/Irdm/post2db.php on line 15
+[03-Dec-2016 21:02:17 America/Denver] PHP Notice:  Undefined offset: 1 in /home1/upcprogr/public_html/Irdm/post2db.php on line 15
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: imei in /home1/upcprogr/public_html/Irdm/post.php on line 6
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: momsn in /home1/upcprogr/public_html/Irdm/post.php on line 7
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: transmit_time in /home1/upcprogr/public_html/Irdm/post.php on line 8
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: iridium_latitude in /home1/upcprogr/public_html/Irdm/post.php on line 9
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: iridium_longitude in /home1/upcprogr/public_html/Irdm/post.php on line 10
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: iridium_cep in /home1/upcprogr/public_html/Irdm/post.php on line 11
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined index: data in /home1/upcprogr/public_html/Irdm/post.php on line 19
+[14-Feb-2017 07:03:34 America/Denver] PHP Notice:  Undefined offset: 1 in /home1/upcprogr/public_html/Irdm/post2db.php on line 15
+[14-Feb-2017 07:06:29 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/Irdm/stream.php on line 23
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: imei in /home1/upcprogr/public_html/Irdm/post.php on line 6
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: momsn in /home1/upcprogr/public_html/Irdm/post.php on line 7
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: transmit_time in /home1/upcprogr/public_html/Irdm/post.php on line 8
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: iridium_latitude in /home1/upcprogr/public_html/Irdm/post.php on line 9
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: iridium_longitude in /home1/upcprogr/public_html/Irdm/post.php on line 10
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: iridium_cep in /home1/upcprogr/public_html/Irdm/post.php on line 11
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined index: data in /home1/upcprogr/public_html/Irdm/post.php on line 19
+[14-Feb-2017 07:11:55 America/Denver] PHP Notice:  Undefined offset: 1 in /home1/upcprogr/public_html/Irdm/post2db.php on line 15
+[14-Feb-2017 07:17:56 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:17:59 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:03 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:07 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:11 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:14 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:18 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:20 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:21 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:25 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:28 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:32 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:36 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:41 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:44 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:48 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:53 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:18:56 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:00 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:03 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:06 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:10 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:14 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:18 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 07:19:22 America/Denver] PHP Warning:  parse_ini_file(../../private/iridium/config.ini): failed to open stream: No such file or directory in /home1/upcprogr/public_html/eyelink/Irdm/connect.php on line 3
+[14-Feb-2017 08:10:07 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 37
+[14-Feb-2017 08:10:07 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 37
+[15-Feb-2017 06:38:03 America/Denver] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/upcprogr/public_html/eyelink/stream.php:2) in /home1/upcprogr/public_html/eyelink/stream.php on line 3
+[15-Feb-2017 06:38:03 America/Denver] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home1/upcprogr/public_html/eyelink/stream.php:2) in /home1/upcprogr/public_html/eyelink/stream.php on line 6
+[15-Feb-2017 06:38:03 America/Denver] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/upcprogr/public_html/eyelink/stream.php:2) in /home1/upcprogr/public_html/eyelink/stream.php on line 6
+[15-Feb-2017 06:38:03 America/Denver] PHP Notice:  ob_end_flush(): failed to delete and flush buffer. No buffer to delete or flush in /home1/upcprogr/public_html/eyelink/stream.php on line 7
+[20-Feb-2017 10:35:55 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/upcprogr/public_html/eyelink/stream.php on line 6
+[20-Feb-2017 10:40:01 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/upcprogr/public_html/eyelink/stream.php on line 6
+[20-Feb-2017 10:40:09 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/upcprogr/public_html/eyelink/stream.php on line 6
+[20-Feb-2017 10:40:09 America/Denver] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home1/upcprogr/public_html/eyelink/stream.php on line 6
+[20-Feb-2017 11:38:30 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:38:31 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:38:31 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:38:31 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:38:31 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:38:31 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:38:31 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:41:17 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:41:18 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:41:18 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:42:25 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 11:43:07 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/eyelink/stream.php on line 59
+[20-Feb-2017 13:27:12 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[20-Feb-2017 13:27:12 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[20-Feb-2017 13:27:13 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[20-Feb-2017 13:27:13 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[20-Feb-2017 13:31:20 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[20-Feb-2017 13:31:20 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:05:14 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:10:18 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:15:21 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:16:46 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:16:57 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:17:05 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:17:26 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:22:08 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:22:32 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:25:26 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:25:39 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:27:37 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:29:18 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:29:37 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:31:59 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:33:17 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:34:05 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:34:56 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:35:40 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:36:47 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:41:51 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:42:16 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:47:19 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:48:29 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:49:42 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:51:09 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:51:29 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:52:32 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:54:22 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 05:59:15 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 06:05:54 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[23-Feb-2017 06:06:17 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 03:39:13 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 03:39:51 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 07:03:26 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 07:08:30 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 07:13:34 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 07:18:37 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 07:23:41 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 07:28:45 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 10:25:39 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 12:00:42 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 12:08:18 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[24-Feb-2017 12:16:52 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[25-Feb-2017 08:48:07 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[26-Feb-2017 03:48:25 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 03:52:07 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 03:52:49 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 03:53:43 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 03:55:57 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 03:57:52 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:02:21 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:02:56 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:08:08 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:08:48 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:12:11 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:13:02 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:18:38 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:19:12 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: imei in /home1/upcprogr/public_html/sjd/post.php on line 6
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: momsn in /home1/upcprogr/public_html/sjd/post.php on line 7
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: transmit_time in /home1/upcprogr/public_html/sjd/post.php on line 8
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: iridium_latitude in /home1/upcprogr/public_html/sjd/post.php on line 9
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: iridium_longitude in /home1/upcprogr/public_html/sjd/post.php on line 10
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: iridium_cep in /home1/upcprogr/public_html/sjd/post.php on line 11
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined index: data in /home1/upcprogr/public_html/sjd/post.php on line 19
+[27-Feb-2017 04:19:56 America/Denver] PHP Notice:  Undefined offset: 1 in /home1/upcprogr/public_html/sjd/post2db.php on line 15
+[27-Feb-2017 04:21:08 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:22:13 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:23:29 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:25:07 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:25:43 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:26:10 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:26:20 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55
+[27-Feb-2017 04:27:10 America/Denver] PHP Notice:  ob_flush(): failed to flush buffer. No buffer to flush in /home1/upcprogr/public_html/sjd/stream.php on line 55

@@ -5,25 +5,29 @@
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta name="description" content="Iridium Live Tracker by UPC Space Program">
+	<meta name="description" content="Live tracking of launch for Sant Joan de Déu Barcelona Children's Hospital">
 	<!-- Main -->
-	<title>Iridium Live by UPC Space Program</title>
+	<title>Live Tracking </title>
 	<!-- Cesium -->
 	<script src="./Cesium/Cesium.js"></script>
 	<link rel="stylesheet" href="./Cesium/Widgets/widgets.css">
 	<!-- Assets -->
 	<link rel="stylesheet" href="./assets/styles.css">
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="./manifest.json">
-	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000000">
-	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-	<div id="cesiumContainer"></div>
+
+		<div id="watermark1">
+			<div id="watermark">
+			<img src="./logos/upc_sp_logo.png" style="flex: 0 1;">
+			<img src="./logos/hospital_logo.png" style="flex: 0 1;">
+			<img src="./logos/logo-eseiaat.jpg" style="flex: 0 1;">
+			<img src="./logos/nanosatlab_logo.png" style="flex: 0 1;">
+			</div>
+		</div>
+		<div id="cesiumContainer"></div>
+		<div id="controlPanel">
+		</div>
 	<script src="./main.js"></script>
 </body>
 
