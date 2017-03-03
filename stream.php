@@ -5,7 +5,7 @@ header( 'Cache-Control: no-cache' );
 header( 'Content-Encoding: none; ' );//disable apache compressed
 
 
-require_once 'connect.php';
+require 'connect.php';
 $reference = parse_ini_file( '../../private/iridium/reference.ini' )['name'];
 echo "connected";
 // We'll be using PHP_EOL instead of \n for multi-arch compatibility
@@ -31,7 +31,12 @@ $id = count( $rows ); // last message sent
 #@ini_set('zlib.output_compression', 0);
 #@ini_set('implicit_flush', 1);
 #@ob_end_clean();
+
+$connection = null;
+
 while ( true ) {
+	require 'connect.php';
+
 	// Check if we have a new data point
 	$query = "SELECT MAX( mysql_id ) FROM " . $reference;
 	$statement = $connection->query( $query );
@@ -58,6 +63,7 @@ while ( true ) {
 		$id = $row['mysql_id'];
 	}
 
-	sleep( 1 ); // chill the server
-}
+	$connection = null;
 
+	sleep( 5 ); // chill the server
+}
