@@ -7,7 +7,7 @@ Cesium.Camera.DEFAULT_VIEW_RECTANGLE = extent;
 Cesium.Camera.DEFAULT_VIEW_FACTOR = 0;
 
 // Label Offset
-var offset = new Cesium.Cartesian3( 25, 25, 0 );
+var offset = new Cesium.Cartesian3( 2, 2, 0 );
 
 // Widget config
 var viewer = new Cesium.Viewer( 'cesiumContainer', {
@@ -20,7 +20,8 @@ var viewer = new Cesium.Viewer( 'cesiumContainer', {
 
 // Finally
 var entities = viewer.entities;
-
+var polylines = new Cesium.PolylineCollection();
+viewer.scene.primitives.add(polylines);
 // Prediction data
 var czml = [ {
 	"id"      : "document",
@@ -166,7 +167,6 @@ viewer.dataSources.add( dataSource );
 viewer.zoomTo( dataSource );
 var box = document.getElementById('controlPanel');
 var iridiumTLM;
-var pointID = 0;
 var points = [];
 if ( typeof EventSource !== 'undefined' ) {
 	// Connect to the stream. This will fail if no data has been pushed to the DB. Reload the page!
@@ -185,18 +185,20 @@ if ( typeof EventSource !== 'undefined' ) {
 		console.log( "START" );
 		var data = JSON.parse( e.data );
 		console.log( data );
-
 		var position = Cesium.Cartesian3.fromDegrees( data.longitude, data.latitude, data.altitude );
 		points.push(position);
-		pointID++;
 		entities.add( {
 			id       : data.id,
 			position : position,
 			label    : {
-				text      : 'ID: ' + pointID,
-				eyeOffset : offset,
-				font      : '15px sans-serif'
-			},
+                text : 'ID: ' + data.id,
+                font : '20px sans-serif',
+                showBackground : true,
+                backgroundColor : Cesium.Color.YELLOW,
+                horizontalOrigin : Cesium.HorizontalOrigin.CENTER,
+                pixelOffset : new Cesium.Cartesian2(0.0, 2),
+                pixelOffsetScaleByDistance : new Cesium.NearFarScalar(1.5e2, 3.0, 1.5e7, 0.5)
+            },
 			point    : {
 				pixelSize    : 5,
 				color        : Cesium.Color.TRANSPARENT,
@@ -204,19 +206,14 @@ if ( typeof EventSource !== 'undefined' ) {
 				outlineWidth : 2.5
 			}
 		} );
-		// entities.add({
-		//     name : 'Balloons path',
-		//     polyline : {
-  //       		positions : points,
-		//         width : 3,
-  //               material : new Cesium.PolylineOutlineMaterialProperty({
-		//             color : Cesium.Color.BLUE,
-		//             outlineWidth : 1,
-		//             outlineColor : Cesium.Color.BLACK
-		//         })
-		//     }
-		// });
-		var node1 = document.createTextNode (' ID: '+pointID);
+		polylines.removeAll();
+		polylines.add({
+			show : true,
+			positions : points,
+			width: 2
+		});
+
+		var node1 = document.createTextNode (' ID: '+data.id);
 		var node2 = document.createTextNode (', TIME: '+data.time);
 		var node3 = document.createTextNode (', LAT: '+data.latitude);
 		var node4 = document.createTextNode (', LON: '+data.longitude);
@@ -234,52 +231,47 @@ if ( typeof EventSource !== 'undefined' ) {
 		// We will update position only when we receive an "update" event
 		console.log( "UPDATE" );
 		var data = JSON.parse( e.data );
+
 		var position = Cesium.Cartesian3.fromDegrees( data.longitude, data.latitude, data.altitude );
 		points.push(position);
-		pointID++;
 		var entity = entities.add( {
 			position : position,
 			model    : { uri : './assets/balloon.glb' },
 			label    : {
-				text      : 'ID: ' + pointID,
-				eyeOffset : offset,
-				font      : '15px sans-serif'
-			},
+                text : 'ID: ' + data.id,
+                font : '20px sans-serif',
+                showBackground : true,
+                backgroundColor : Cesium.Color.YELLOW,
+                horizontalOrigin : Cesium.HorizontalOrigin.CENTER,
+                pixelOffset : new Cesium.Cartesian2(0.0, 2),
+                pixelOffsetScaleByDistance : new Cesium.NearFarScalar(1.5e2, 3.0, 1.5e7, 0.5)
+            },
 			point    : {
 				pixelSize    : 5,
-				color        : Cesium.Color.RED,
+				color        : Cesium.Color.TRANSPARENT,
 				outlineColor : Cesium.Color.YELLOW,
 				outlineWidth : 2.5
 			}
-		} );
-                var node1 = document.createTextNode (' ID: '+pointID);
+		});
+		polylines.removeAll();
+		polylines.add({
+			show : true,
+			positions : points,
+			width: 2
+		});
+                var node1 = document.createTextNode (' ID: '+data.id);
                 var node2 = document.createTextNode (', TIME: '+data.time);
                 var node3 = document.createTextNode (', LAT: '+data.latitude);
                 var node4 = document.createTextNode (', LON: '+data.longitude);
                 var node5 = document.createTextNode (', ALT: '+data.altitude);
                 iridiumTLM = [node1, node2, node3, node4, node5];
-                
 		iridiumTLM.forEach(function(entry) {
     		box.appendChild(entry);
     		// box.insertAdjacentHTML('beforeend', '<br>');
 		});
 		box.insertAdjacentHTML('beforeend', '<br>');
 		box.scrollTop = box.scrollHeight;
-		//console.log(points)
 		viewer.flyTo( entity );
-		// adds a polyline between points
-		// entities.add({
-		//     name : 'Balloons path',
-		//     polyline : {
-  //       		positions : points,
-		//         width : 3,
-  //               material : new Cesium.PolylineOutlineMaterialProperty({
-		//             color : Cesium.Color.BLUE,
-		//             outlineWidth : 1,
-		//             outlineColor : Cesium.Color.BLACK
-		//         })
-		//     }
-		// });
 		if ( entities.values.length > 1 ) {
 			var prevEntity = entities.values[ entities.values.length - 2 ];
 			// console.log( prevEntity );
