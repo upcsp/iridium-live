@@ -6,11 +6,12 @@
   - Clone the repo in the ./public_html folder of your server. (Tested with DigitalOcean)
   - Add *reference.ini* in the ./private/iridium/ folder. Fill it with `name = "whatever_you_want"`
   - Add *config.ini* in the ./private/iridium/ folder. Fill it with :
-  ```
-`server = "localhost"`
-`user = "mysql_user"`
-`password = "mysql_password"`
-`database = "mysql_iridium_database_name"` (edited)
+
+```
+server = "localhost"
+user = "mysql_user"
+password = "mysql_password"
+database = "mysql_iridium_database_name"
 ```
 
 ### Todos
